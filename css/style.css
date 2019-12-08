@@ -254,10 +254,13 @@ button {
 
 
 /* Третий экран */
+.exclusive {
+    display: flex;
+    justify-content: center;
+}
 
 .exclusive-column-right {
-    display: inline-block;
-    width: 683px;
+    width: 50%;
     height: 683px;
     background-image: url(../img/exclusive-column-right.jpg);
     background-repeat: no-repeat;
@@ -267,8 +270,7 @@ button {
 }
 
 .exclusive-column-left {
-    display: inline-block;
-    width: 683px;
+    width: 50%;
     height: 683px;
     background-image: url(../img/exclusive-column-left.jpg);
     background-repeat: no-repeat;

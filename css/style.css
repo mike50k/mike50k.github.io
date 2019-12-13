@@ -3,10 +3,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap');
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     line-height: 0;
 }
 
@@ -16,18 +17,18 @@ body {
 }
 
 ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 button {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .padding-site {
@@ -37,12 +38,12 @@ button {
 /* end of layout settings */
 
 .container {
-    width: 1366px;
+    min-width: 1366px;
     margin: 0 auto;
 }
 
 .header {
-    padding-top: 63px;
+    padding-top: 40px;
 }
 
 .slider {
@@ -65,24 +66,20 @@ button {
 .menu-link {
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 700;
     text-transform: uppercase;
     padding: 0 13px 10px 13px;
 }
 
-.menu-link-active {
-    color: #212121;
-    font-weight: 700;
-    border-bottom: 3px solid #212121;    
-}
-
+.menu-link:active,
 .menu-link:hover {
     color: #212121;
+    font-weight: 700;
+    border-bottom: 3px solid #212121;
 }
 
-
 .slider-text {
-    padding-top: 287px;
+    padding-top: 220px;
 }
 
 .slider-trending {
@@ -90,7 +87,7 @@ button {
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.8px;  
+    letter-spacing: 1.8px;
 }
 
 .slider-title {
@@ -155,7 +152,7 @@ button {
 }
 
 .circle:hover {
-  background-color: #212121;
+    background-color: #212121;
 }
 
 /* Второй экран */
@@ -181,8 +178,8 @@ button {
 
 .featured-link_active {
     color: #212121;
-    border-bottom: 3px solid #212121;  
-    padding-bottom: 8px;  
+    border-bottom: 3px solid #212121;
+    padding-bottom: 8px;
 }
 
 .featured-link:hover {
@@ -199,18 +196,18 @@ button {
 }
 
 .featured-products-block:hover .featured-products-effect {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 
 .featured-products-block .featured-products-effect {
-	opacity: 0;
+    opacity: 0;
 }
 
 .featured-products-effect {
     position: absolute;
     width: 270px;
     height: 270px;
-	top: 0;
+    top: 0;
     left: 0;
     outline: 1px solid #9c9c9c;
     background-color: #ffffff;
@@ -230,8 +227,8 @@ button {
     height: 48px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 50%;
-    background-color: #ffffff;  
-    background-image: url(../img/arrow.png); 
+    background-color: #ffffff;
+    background-image: url(../img/arrow.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
@@ -345,7 +342,7 @@ button {
     margin-right: 0;
 }
 
-.trending-products-product:nth-child(4), 
+.trending-products-product:nth-child(4),
 .trending-products-product:nth-child(5),
 .trending-products-product:nth-child(6) {
     margin-bottom: 120px;
@@ -421,6 +418,7 @@ button {
 .exclusive-product:last-child {
     margin-right: 0;
 }
+
 .exclusive-product:last-child {
     margin-bottom: 120px;
 }
@@ -604,4 +602,80 @@ button {
     width: 28px;
     height: 28px;
     background-image: url(../img/pin-icon-active.png);
+}
+
+/* СТРАНИЦА "КОНТАКТЫ" */
+
+.footer-contact {
+    background-color: #f7f7f7;
+}
+
+.slider-contact {
+    height: 360px;
+    background-color: #f5f5f5;
+    background-image: none;
+}
+
+.contact-title {
+    margin-top: 171px;
+    color: #212121;
+    font-size: 62px;
+    font-weight: 300;
+    line-height: 72px;
+}
+
+.contact {
+    margin-top: 70px;
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-block {
+    height: 370px;
+    width: 32%;
+    border: 1px solid #9c9c9c;
+}
+
+.contact-block-title {
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29.88px;
+    text-transform: uppercase;
+}
+
+.contact-block-text {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.contact-block-string {
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+}
+
+.contact-block-pic {
+    margin-top: 48px;
+}
+
+.contact-block-string-text {
+    color: #6c6c6c;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-block-string-text_black {
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+.contact-block-string-text_light {
+    font-weight: 400;
 }

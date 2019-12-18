@@ -66,7 +66,7 @@ button {
 .menu-link {
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     text-transform: uppercase;
     padding: 0 13px 10px 13px;
 }
@@ -74,7 +74,6 @@ button {
 .menu-link:active,
 .menu-link:hover {
     color: #212121;
-    font-weight: 700;
     border-bottom: 3px solid #212121;
 }
 
@@ -331,22 +330,29 @@ button {
     color: #6c6c6c;
 }
 
-.trending-products-product {
-    display: inline-block;
-    margin-right: 25px;
+.trending-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-link {
+    width: 370px;
     margin-bottom: 30px;
 }
 
-.trending-products-product:nth-child(3),
-.trending-products-product:last-child {
-    margin-right: 0;
-}
-
-.trending-products-product:nth-child(4),
-.trending-products-product:nth-child(5),
-.trending-products-product:nth-child(6) {
+.gallery-link:nth-child(4),
+.gallery-link:nth-child(5),
+.gallery-link:nth-child(6) {
     margin-bottom: 120px;
 }
+
+.gallery-product:hover,
+.gallery-product:active {
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+}
+
+
 
 /* Пятый экран */
 
@@ -462,7 +468,7 @@ button {
 /* Footer */
 
 .footer {
-    color: #f7f7f70;
+    background-color: #f7f7f7;
     padding-top: 120px;
     padding-bottom: 40px;
 }
@@ -620,7 +626,7 @@ button {
     margin-top: 171px;
     color: #212121;
     font-size: 62px;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 72px;
 }
 
